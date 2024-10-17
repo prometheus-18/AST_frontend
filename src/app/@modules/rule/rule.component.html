@@ -1,0 +1,33 @@
+<div class="container">
+  <h2> RULE ENGINE </h2>
+  <form [formGroup]="ruleForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="age">Age:</label>
+      <input formControlName="age" type="number" placeholder="Enter Age" />
+    </div>
+
+    <div>
+      <label for="department">Department:</label>
+      <input formControlName="department" type="text" placeholder="Enter Department" />
+    </div>
+
+    <div>
+      <label for="salary">Salary:</label>
+      <input formControlName="salary" type="number" placeholder="Enter Salary" />
+    </div>
+
+    <div>
+      <label for="experience">Experience (years):</label>
+      <input formControlName="experience" type="number" placeholder="Enter Experience" />
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- <h3>Evaluate Rule</h3>
+  <button (click)="evaluateRule()">Evaluate Rule</button>
+
+  <div *ngIf="ruleResult !== null">
+    <p>Rule Evaluation Result: {{ ruleResult }}</p>
+  </div> -->
+</div>
